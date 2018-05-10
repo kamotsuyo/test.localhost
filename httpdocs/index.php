@@ -1,4 +1,4 @@
-<?PHP require_once("/Users/kamogashiratsuyoshi/Dropbox/_local_mamp/kamo_functions/kamo_mlog/kamo_mlog.php"); ?>
+<?PHP require_once(__DIR__.'/php_js_console/debuger.php'); ?>
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -6,26 +6,21 @@
     <meta charset="UTF-8">
     <title>Untitled Document</title>
     <meta name="Author" content="" />
-<script data-main="js/main" src="js/require.js"></script>
-    <script>
-        require.config({
-            urlArgs: "bust=" + (new Date()).getTime()
-        });
-
-    </script>
+    <script data-main="php_js_console/main.js" src="library/require.js"></script>
 </head>
 
 <body>
     <h1> test
     </h1>
-    <h2> XHR test
+    <h2> PHPログをjavascript console.logに出力
     </h2>
-    <p> 単にconsole.log出力
+    <p> console.log出力
     </p>
 
     <button id="button"> XHR
                 </button>
-
+    <?PHP $log = new MDebug(); ?>
+    <?PHP $log->log('hogehoge');?>
 </body>
 
 </html>
