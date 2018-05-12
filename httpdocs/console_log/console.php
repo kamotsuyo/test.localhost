@@ -20,7 +20,7 @@ class Console{
         $result =ob_get_contents(); 
         ob_end_clean();
         
-        $result = str_replace("\r\n", '', $result);
+//        $result = str_replace("\r\n", '', $result);
         $result = str_replace('"','\"',$result);
         $result = str_replace(' ','',$result);
         //PHP_EOLを削除
