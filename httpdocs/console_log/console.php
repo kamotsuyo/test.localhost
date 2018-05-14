@@ -1,10 +1,27 @@
 <?PHP
-
+/**
+* Concoleクラス
+* 使い方：$console = new Console();
+* $console->log($str);
+* $console->vardump($obj);
+* 
+* 
+* 
+*/
 class Console{
     
     function __construct(){
-
+        //なにもしない
     }
+    /**
+    * log関数
+    * 引数をconsole.logに書き出し。
+    * 
+    * 
+    * 
+    * 
+    * 
+    */
     public function log($_log){
         
         //ダブルコートをエスケープ文字に置き換える
