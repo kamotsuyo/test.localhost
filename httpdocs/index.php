@@ -16,9 +16,10 @@
 
     <?PHP $console = new Console(); ?>
     <?PHP $console->log('hogehoge'); ?>
-
+    <?PHP $console->log("これはどう？"); ?>
     <?PHP $console->vardump($arr); ?>
     <?PHP var_dump($arr); ?>
+    <?PHP $console->vardump(debug_backtrace() ); ?>
 </body>
 
 </html>
